@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Red Mesh de Sensores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Red Mesh de Sensores</h1>
+    <p>BATMAN-adv + MQTT + Gateway + Backend</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Nodos activos -->
+    <section class="panel">
+      <h2>Nodos activos</h2>
+      <div id="nodos-activos" class="nodes-grid">
+        <!-- Se llenará desde app.js -->
+      </div>
+    </section>
+
+    <!-- Última lectura por nodo -->
+    <section class="panel">
+      <h2>Última lectura por nodo</h2>
+      <div id="ultimos" class="nodes-grid">
+        <!-- Se llenará desde app.js -->
+      </div>
+    </section>
+
+    <!-- Tabla de datos -->
+    <section class="panel">
+      <h2>Últimas lecturas recibidas</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nodo</th>
+              <th>Clave</th>
+              <th>Valor</th>
+              <th>Fecha/Hora</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-datos">
+            <!-- Se llenará desde app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>AGRO RED</span>
+    <span id="estado-actualizacion">Actualizado: --</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
