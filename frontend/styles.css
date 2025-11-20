@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.topbar {
+  padding: 1rem 2rem;
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.topbar p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.panel {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #1f2937;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.node-card {
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #1f2937;
+  background: #020617;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.node-name {
+  font-weight: 600;
+}
+
+.badge {
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-activo {
+  background: #16a34a33;
+  color: #22c55e;
+  border: 1px solid #22c55e55;
+}
+
+.badge-inactivo {
+  background: #b91c1c33;
+  color: #f97373;
+  border: 1px solid #f8717133;
+}
+
+.node-last {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.node-value {
+  font-size: 0.9rem;
+}
+
+.table-wrapper {
+  max-height: 350px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) td {
+  background: #020617;
+}
+
+tr:nth-child(odd) td {
+  background: #020617;
+}
+
+.footer {
+  padding: 0.8rem 1.4rem;
+  border-top: 1px solid #1f2937;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  color: #9ca3af;
+}
